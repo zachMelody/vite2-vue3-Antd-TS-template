@@ -41,9 +41,7 @@ jobs:
 
       # 运行构建脚本
       - name: Build frontend
-        run: | 
-          yarn build
-          cp dist/index.html dist/404.html
+        run: yarn build:ghpages
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2

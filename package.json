@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit --skipLibCheck && vite build",
+    "build:ghpages": "vue-tsc --noEmit --skipLibCheck && vite build --mode=ghpages",
     "preview": "vite preview"
   },
   "dependencies": {
