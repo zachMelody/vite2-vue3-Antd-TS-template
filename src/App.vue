@@ -1,11 +1,18 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import Main from './layout/main.vue';
 </script>
 
 <template>
-  <Main />
+  <a-config-provider>
+    <router-view />
+  </a-config-provider>
 </template>
 
-<style></style>
+<script setup lang="ts"></script>
+
+<style>
+#app {
+  height: 100%;
+}
+</style>
