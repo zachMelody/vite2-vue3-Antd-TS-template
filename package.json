@@ -23,7 +23,33 @@
     "typescript": "^4.5.4",
     "unplugin-vue-components": "^0.17.18",
     "vite": "^2.8.0",
+    "vite-plugin-optimize-persist": "^0.1.2",
+    "vite-plugin-package-config": "^0.1.1",
     "vite-plugin-windicss": "^1.7.0",
     "vue-tsc": "^0.29.8"
+  },
+  "vite": {
+    "optimizeDeps": {
+      "include": [
+        "@ant-design-vue/pro-layout",
+        "@ant-design/icons-vue",
+        "ant-design-vue",
+        "ant-design-vue/es",
+        "ant-design-vue/es/avatar/style/css",
+        "ant-design-vue/es/button/style/css",
+        "ant-design-vue/es/config-provider/style/css",
+        "ant-design-vue/es/descriptions/style/css",
+        "ant-design-vue/es/divider/style/css",
+        "ant-design-vue/es/dropdown/style/css",
+        "ant-design-vue/es/menu/style/css",
+        "ant-design-vue/es/pagination/style/css",
+        "ant-design-vue/es/result/style/css",
+        "ant-design-vue/es/space/style/css",
+        "ant-design-vue/es/statistic/style/css",
+        "ant-design-vue/es/tag/style/css",
+        "vue",
+        "vue-router"
+      ]
+    }
   }
 }

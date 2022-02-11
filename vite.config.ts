@@ -2,6 +2,13 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Components from 'unplugin-vue-components/vite'; // 按需引入
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'; // 按需引入antd
+/**
+ * Persist dynamically analyzed dependencies optimization
+ * https://github.com/vitejs/vite/pull/6758
+ */
+import OptimizationPersist from 'vite-plugin-optimize-persist';
+import PkgConfig from 'vite-plugin-package-config';
+
 import path from 'path';
 import WindiCSS from 'vite-plugin-windicss';
 
@@ -15,10 +22,19 @@ const { VITE_PORT, VITE_OPEN, VITE_PUBLIC_PATH } = loadEnv();
 export default defineConfig({
   plugins: [
     vue(),
+    PkgConfig(),
+    OptimizationPersist(),
     WindiCSS(),
     Components({
       resolvers: [AntDesignVueResolver()],
       dts: true, // enabled by default if `typescript` is installed
+      // filters for transforming targets
+      include: [/\.vue$/, /\.vue\?vue/],
+      exclude: [
+        /[\\/]node_modules[\\/]/,
+        /[\\/]\.git[\\/]/,
+        /[\\/]\.nuxt[\\/]/,
+      ],
     }),
   ],
   resolve: {
