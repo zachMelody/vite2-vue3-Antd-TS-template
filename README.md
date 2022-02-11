@@ -1,12 +1,21 @@
 # Vue 3 + Typescript + Vite
 
+
 ## 集成组件
 - [Vite](https://vitejs.dev/guide/)
 - [Vue 3](https://vuejs.org/guide/introduction.html)
   - [Vue Router v4](https://github.com/vuejs/router)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Windi CSS](https://github.com/windicss/windicss)
-- [Ant-Design-Vue](https://2x.antdv.com/docs/vue/introduce-cn/) - ui 基本使用
+- [Ant-Design-Vue](https://next.antdv.com/docs/vue/introduce-cn/) - ui 基本使用
+  - [pro-layout](https://github.com/vueComponent/pro-layout)
+- [axios](https://github.com/axios/axios)
+
+## 🖥 Browser compatibility
+
+| [![edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![electron_48x48](https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png)](http://godban.github.io/browsers-support-badges/) |
+| --- | --- | --- | --- | --- |
+| Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
 ## 安装使用
 
