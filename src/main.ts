@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 
-import { setupAntd } from './libs/antdv';
-import 'ant-design-vue/dist/antd.css';
+// import { setupAntd } from './libs/antdv';
+// import 'ant-design-vue/dist/antd.css';
 import ProLayout, { PageContainer } from '@ant-design-vue/pro-layout';
 import '@ant-design-vue/pro-layout/dist/style.css';
 
@@ -13,7 +13,7 @@ import router, { setupRouter } from './router'; // 路由
 
 const app = createApp(App);
 
-setupAntd(app); // 引入antd
+// setupAntd(app); // 完整引入antd
 app.use(ProLayout).use(PageContainer); // pro-layout
 setupRouter(app); // 引入路由
 
