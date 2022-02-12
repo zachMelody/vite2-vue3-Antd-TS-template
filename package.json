@@ -42,6 +42,7 @@
         "ant-design-vue/es/divider/style/css",
         "ant-design-vue/es/dropdown/style/css",
         "ant-design-vue/es/menu/style/css",
+        "ant-design-vue/es/message/style/css",
         "ant-design-vue/es/pagination/style/css",
         "ant-design-vue/es/result/style/css",
         "ant-design-vue/es/space/style/css",

@@ -16,6 +16,7 @@
 
 <script lang="ts" setup>
 import { message } from 'ant-design-vue';
+import 'ant-design-vue/es/message/style/css';
 
 const handleClick = () => {
   console.log('info');
